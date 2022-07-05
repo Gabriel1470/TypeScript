@@ -7,7 +7,7 @@
 // Hint: The type for the `languages` property should use a type variable.
 
 interface Country <Type> {
-    name: Type;
+    name: string;
     languages: Type;
 }
 
@@ -18,7 +18,7 @@ const languagesObj1: Country<string> = {
 
 console.log(languagesObj1.languages);
 
-const languagesObj2: Country<any|string[]> = {
+const languagesObj2: Country<string[]> = {
     name: "Spain",
     languages: ["Spanish", "Catalan", "Galician", "Basque", "Valencian"],
 };
